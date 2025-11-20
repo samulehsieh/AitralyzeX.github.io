@@ -663,6 +663,7 @@
       color: var(--primary);
       font-size: 0.9rem;
       cursor: pointer;
+      display: inline-block;
     }
 
     .demo-btn:hover {
@@ -748,12 +749,12 @@
       </div>
     </div>
 
-      <nav class="nav-links-mobile" id="navMobile">
-        <a href="#about">關於我們</a>
-        <a href="#features">特色</a>
-        <a href="#demo">Demo</a>
-        <a href="#contact">參與 AitralyzeX 內測</a>
-      </nav>
+    <nav class="nav-links-mobile" id="navMobile">
+      <a href="#about">關於我們</a>
+      <a href="#features">特色</a>
+      <a href="#demo">Demo</a>
+      <a href="#contact">參與 AitralyzeX 內測</a>
+    </nav>
   </header>
 
   <!-- Hero -->
@@ -835,7 +836,6 @@
       <div class="section-header">
         <p class="section-eyebrow">ABOUT</p>
         <h2 class="section-title">關於我們</h2>
-        <!-- 這裡原本的 section-subtitle 已移除 -->
       </div>
 
       <div class="team-grid">
@@ -938,15 +938,12 @@
       <div class="section-header">
         <p class="section-eyebrow">DEMO</p>
         <h2 class="section-title">AitralyzeX Demo（示意）</h2>
-        <!-- 這裡原本的 Demo 說明 subtitle 已移除 -->
+        <!-- 可視需要加上 subtitle -->
       </div>
 
       <div class="demo-card">
         <div class="demo-media">
-          未來可放：<br />
-          ・回測操作介面截圖<br />
-          ・實際跑回測的 GIF 動畫<br />
-          ・或嵌入互動圖表（例如 TradingView / 自製前端）
+          目前 Demo 以 Streamlit 建立，點擊右側按鈕即可在新分頁開啟實際操作畫面。
         </div>
         <div>
           <p class="demo-text">
@@ -962,9 +959,16 @@
             <br />・將真實持股或對帳單上傳給 AI，請它協助分析風險暴露
             <br />・教學模式：用簡化案例帶使用者理解每一步設定。
           </p>
-          <button class="demo-btn" type="button">
-            Demo 連結（Coming soon）
-          </button>
+
+          <!-- 這裡改成真正連到 Streamlit Demo 的按鈕 -->
+          <a
+            class="demo-btn"
+            href="https://backtestsystempy-wxslw5ksavzansjnsjsez4.streamlit.app/"
+            target="_blank"
+            rel="noopener"
+          >
+            前往線上 Demo（Streamlit）
+          </a>
         </div>
       </div>
     </div>
@@ -1042,3 +1046,4 @@
 </body>
 
 </html>
+
